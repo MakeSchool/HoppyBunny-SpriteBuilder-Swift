@@ -81,7 +81,12 @@
 		<key>Sprites</key>
 		<dict/>
 		<key>assets</key>
-		<dict/>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
 		<key>ccbResources</key>
 		<dict>
 			<key>previewFolderHidden</key>
