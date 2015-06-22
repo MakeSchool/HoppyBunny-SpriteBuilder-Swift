@@ -78,17 +78,15 @@
 			<key>previewFolderHidden</key>
 			<true/>
 		</dict>
-		<key>FlappyFlyArtPack</key>
+		<key>Sprites</key>
+		<dict/>
+		<key>assets</key>
 		<dict>
-			<key>format_android</key>
-			<integer>2</integer>
-			<key>format_ios</key>
-			<integer>2</integer>
+			<key>isDirty</key>
+			<true/>
 			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>
-		<key>Sprites</key>
-		<dict/>
 		<key>ccbResources</key>
 		<dict>
 			<key>previewFolderHidden</key>

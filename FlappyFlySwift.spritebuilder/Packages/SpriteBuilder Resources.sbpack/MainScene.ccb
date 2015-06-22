@@ -10,7 +10,7 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>20</integer>
+	<integer>22</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -112,7 +112,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>FlappyFlyArtPack/background.png</string>
+							<string>assets/background.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -220,7 +220,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>FlappyFlyArtPack/clouds.png</string>
+							<string>assets/clouds.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -290,7 +290,7 @@
 						<key>value</key>
 						<array>
 							<real>160</real>
-							<real>106</real>
+							<real>134</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -328,7 +328,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>FlappyFlyArtPack/bush.png</string>
+							<string>assets/bg_crystals.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -497,14 +497,14 @@
 								</array>
 								<array>
 									<real>0.0</real>
-									<real>155</real>
+									<real>184</real>
 								</array>
 								<array>
-									<real>348</real>
-									<real>155</real>
+									<real>423</real>
+									<real>184</real>
 								</array>
 								<array>
-									<real>348</real>
+									<real>423</real>
 									<real>0.0</real>
 								</array>
 							</array>
@@ -512,16 +512,16 @@
 							<array>
 								<array>
 									<array>
-										<real>348</real>
+										<real>423</real>
 										<real>0.0</real>
 									</array>
 									<array>
-										<real>348</real>
-										<real>155</real>
+										<real>423</real>
+										<real>184</real>
 									</array>
 									<array>
 										<real>0.0</real>
-										<real>155</real>
+										<real>184</real>
 									</array>
 									<array>
 										<real>0.0</real>
@@ -586,7 +586,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>FlappyFlyArtPack/ground.png</string>
+									<string>assets/ground.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -670,14 +670,14 @@
 								</array>
 								<array>
 									<real>0.0</real>
-									<real>155</real>
+									<real>184</real>
 								</array>
 								<array>
-									<real>348</real>
-									<real>155</real>
+									<real>423</real>
+									<real>184</real>
 								</array>
 								<array>
-									<real>348</real>
+									<real>423</real>
 									<real>0.0</real>
 								</array>
 							</array>
@@ -685,16 +685,16 @@
 							<array>
 								<array>
 									<array>
-										<real>348</real>
+										<real>423</real>
 										<real>0.0</real>
 									</array>
 									<array>
-										<real>348</real>
-										<real>155</real>
+										<real>423</real>
+										<real>184</real>
 									</array>
 									<array>
 										<real>0.0</real>
-										<real>155</real>
+										<real>184</real>
 									</array>
 									<array>
 										<real>0.0</real>
@@ -720,7 +720,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>348</real>
+									<real>423</real>
 									<real>12</real>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -759,7 +759,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>FlappyFlyArtPack/ground.png</string>
+									<string>assets/ground.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -795,6 +795,8 @@
 								<array/>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -1502,8 +1504,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

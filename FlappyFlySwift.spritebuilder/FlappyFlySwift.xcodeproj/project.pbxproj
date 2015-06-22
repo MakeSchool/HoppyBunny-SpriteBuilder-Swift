@@ -121,26 +121,12 @@
 			remoteGlobalIDString = D2FEB74F194F6C9E00FC0574;
 			remoteInfo = cocos2dAndroid;
 		};
-		7A97910119E62E40001FFC4D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B7378940180761A80076A88C /* cocos2d.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5BF3267A195F8D8800D9A51A;
-			remoteInfo = cocos2dJava;
-		};
 		7A97910319E62E40001FFC4D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B7378940180761A80076A88C /* cocos2d.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7A4037A819E37038007B6E8F;
 			remoteInfo = "cocos2d-mac";
-		};
-		7A97910519E62E4C001FFC4D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B7378940180761A80076A88C /* cocos2d.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BF32679195F8D8800D9A51A;
-			remoteInfo = cocos2dJava;
 		};
 		7A97910F19E6319A001FFC4D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -156,19 +142,19 @@
 			remoteGlobalIDString = 7A4037A719E37038007B6E8F;
 			remoteInfo = "cocos2d-mac";
 		};
-		7A97911F19E63219001FFC4D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B7378940180761A80076A88C /* cocos2d.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BF32679195F8D8800D9A51A;
-			remoteInfo = cocos2dJava;
-		};
 		7A97912119E6321C001FFC4D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B7378940180761A80076A88C /* cocos2d.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = D2FEB60D194F6C9E00FC0574;
 			remoteInfo = cocos2dAndroid;
+		};
+		CC8BE3CA1B37C26800F10297 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7378940180761A80076A88C /* cocos2d.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B7E7DE341A76DB7D004234B7;
+			remoteInfo = cocos2dMacFramework;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -180,7 +166,7 @@
 		5B121013197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		5B121015197483EE004C1E1D /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		5B12101B19748413004C1E1D /* FlappyFlySwiftActivity.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; name = FlappyFlySwiftActivity.java; path = Source/Platforms/Android/java/org/cocos2d/FlappyFlySwift/FlappyFlySwiftActivity.java; sourceTree = "<group>"; };
-		5B121021197484A3004C1E1D /* FlappyFlySwift Java.jar */ = {isa = PBXFileReference; explicitFileType = compiled.java.jar; includeInIndex = 0; path = "FlappyFlySwift Java.jar"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B121021197484A3004C1E1D /* FlappyFlySwift Java.jar */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = file; path = "FlappyFlySwift Java.jar"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B12102E197484FA004C1E1D /* FlappyFlySwiftActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlappyFlySwiftActivity.h; path = Source/Platforms/Android/FlappyFlySwiftActivity.h; sourceTree = "<group>"; };
 		5B12102F197484FA004C1E1D /* FlappyFlySwiftActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlappyFlySwiftActivity.m; path = Source/Platforms/Android/FlappyFlySwiftActivity.m; sourceTree = "<group>"; };
 		5B121033197485FE004C1E1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Platforms/Android/Info.plist; sourceTree = "<group>"; };
@@ -437,8 +423,8 @@
 			children = (
 				7A9790FE19E62E40001FFC4D /* libcocos2d.a */,
 				7A97910019E62E40001FFC4D /* libcocos2dAndroid.a */,
-				7A97910219E62E40001FFC4D /* cocos2dJava.jar */,
 				7A97910419E62E40001FFC4D /* libcocos2d-mac.a */,
+				CC8BE3CB1B37C26800F10297 /* cocos2dMacFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -576,7 +562,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				7A97910619E62E4C001FFC4D /* PBXTargetDependency */,
 			);
 			name = "FlappyFlySwift Java";
 			productName = "FlappyFlySwift Java";
@@ -614,7 +599,6 @@
 			);
 			dependencies = (
 				7A97912219E6321C001FFC4D /* PBXTargetDependency */,
-				7A97912019E63219001FFC4D /* PBXTargetDependency */,
 				5B121032197485D1004C1E1D /* PBXTargetDependency */,
 			);
 			name = "FlappyFlySwift Android";
@@ -664,7 +648,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "FlappyFlySwift" */;
+			buildConfigurationList = B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "HoppyBunnySwift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -706,18 +690,18 @@
 			remoteRef = 7A9790FF19E62E40001FFC4D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		7A97910219E62E40001FFC4D /* cocos2dJava.jar */ = {
-			isa = PBXReferenceProxy;
-			fileType = compiled.java.jar;
-			path = cocos2dJava.jar;
-			remoteRef = 7A97910119E62E40001FFC4D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		7A97910419E62E40001FFC4D /* libcocos2d-mac.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libcocos2d-mac.a";
 			remoteRef = 7A97910319E62E40001FFC4D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CC8BE3CB1B37C26800F10297 /* cocos2dMacFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = cocos2dMacFramework.framework;
+			remoteRef = CC8BE3CA1B37C26800F10297 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -888,11 +872,6 @@
 			target = 5B121020197484A3004C1E1D /* FlappyFlySwift Java */;
 			targetProxy = 5B121031197485D1004C1E1D /* PBXContainerItemProxy */;
 		};
-		7A97910619E62E4C001FFC4D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = cocos2dJava;
-			targetProxy = 7A97910519E62E4C001FFC4D /* PBXContainerItemProxy */;
-		};
 		7A97911019E6319A001FFC4D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "cocos2d-ios";
@@ -902,11 +881,6 @@
 			isa = PBXTargetDependency;
 			name = "cocos2d-mac";
 			targetProxy = 7A97911519E631A1001FFC4D /* PBXContainerItemProxy */;
-		};
-		7A97912019E63219001FFC4D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = cocos2dJava;
-			targetProxy = 7A97911F19E63219001FFC4D /* PBXContainerItemProxy */;
 		};
 		7A97912219E6321C001FFC4D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1337,7 +1311,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "FlappyFlySwift" */ = {
+		B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "HoppyBunnySwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B77F1CDC17B978D8009739AE /* Debug */,
