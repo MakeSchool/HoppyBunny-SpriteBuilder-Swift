@@ -49,9 +49,9 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>pipe_top</string>
+				<string>carrot_top</string>
 				<key>memberVarAssignmentName</key>
-				<string>topPipe</string>
+				<string>topCarrot</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>physicsBody</key>
@@ -175,7 +175,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>FlappyFlyArtPack/pipe_top.png</string>
+							<string>assets/carrot_top.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -211,6 +211,8 @@
 						<array/>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -222,9 +224,9 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>pipe_bottom</string>
+				<string>carrot_bottom</string>
 				<key>memberVarAssignmentName</key>
-				<string>bottomPipe</string>
+				<string>bottomCarrot</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>physicsBody</key>
@@ -348,7 +350,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>FlappyFlyArtPack/pipe_bottom.png</string>
+							<string>assets/carrot_bottom.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -599,8 +601,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

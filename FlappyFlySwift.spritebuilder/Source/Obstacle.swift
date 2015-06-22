@@ -2,19 +2,19 @@ import Foundation
 
 class Obstacle : CCNode
 {
-    weak var topPipe: CCNode!
-    var bottomPipe: CCNode!
+    weak var topCarrot: CCNode!
+    var bottomCarrot: CCNode!
 
     // visibility on a 3,5-inch iPhone ends a 88 points and we want some meat
-    let topPipeMinimumPositionY: CGFloat = 128
+    let topCarrotMinimumPositionY: CGFloat = 128
     // visibility ends at 480 and we want some meat
-    let bottomPipeMaximumPositionY: CGFloat = 440
+    let bottomCarrotMaximumPositionY: CGFloat = 440
     // distance between top and bottom pipe
-    let pipeDistance: CGFloat = 142
+    let carrotDistance: CGFloat = 142
 
     func didLoadFromCCB() {
-        topPipe.physicsBody.sensor = true
-        bottomPipe.physicsBody.sensor = true
+        topCarrot.physicsBody.sensor = true
+        bottomCarrot.physicsBody.sensor = true
     }
 
     func setupRandomPosition() {
@@ -22,8 +22,8 @@ class Obstacle : CCNode
         let randomPrecision: UInt32 = 100
         let random = CGFloat(arc4random_uniform(randomPrecision)) / CGFloat(randomPrecision)
         // calculate the end of the range of top pipe
-        let range = bottomPipeMaximumPositionY - pipeDistance - topPipeMinimumPositionY
-        topPipe.position = ccp(topPipe.position.x, topPipeMinimumPositionY + (random * range));
-        bottomPipe.position = ccp(bottomPipe.position.x, topPipe.position.y + pipeDistance);
+        let range = bottomCarrotMaximumPositionY - carrotDistance - topCarrotMinimumPositionY
+        topCarrot.position = ccp(topCarrot.position.x, topCarrotMinimumPositionY + (random * range));
+        bottomCarrot.position = ccp(bottomCarrot.position.x, topCarrot.position.y + carrotDistance);
     }
 }
