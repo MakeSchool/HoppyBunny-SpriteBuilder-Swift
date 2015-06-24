@@ -32,9 +32,9 @@ class MainScene : CCNode, CCPhysicsCollisionDelegate {
     grounds.append(ground2)
     
     // spawn the first obstacles
-    spawnNewObstacle()
-    spawnNewObstacle()
-    spawnNewObstacle()
+    for i in 1...3 {
+      spawnNewObstacle()
+    }
   }
   
   override func update(delta: CCTime) {
