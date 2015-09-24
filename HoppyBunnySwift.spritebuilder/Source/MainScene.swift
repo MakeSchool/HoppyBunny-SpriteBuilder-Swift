@@ -32,7 +32,7 @@ class MainScene : CCNode, CCPhysicsCollisionDelegate {
     grounds.append(ground2)
     
     // spawn the first obstacles
-    for i in 1...3 {
+    for _ in 1...3 {
       spawnNewObstacle()
     }
   }
@@ -76,14 +76,14 @@ class MainScene : CCNode, CCPhysicsCollisionDelegate {
     }
     
     // checking for removable obstacles
-    for obstacle in obstacles.reverse() {
+    for obstacle in Array(obstacles.reverse()) {
       let obstacleWorldPosition = gamePhysicsNode.convertToWorldSpace(obstacle.position)
       let obstacleScreenPosition = convertToNodeSpace(obstacleWorldPosition)
       
       // obstacle moved past left side of screen?
       if obstacleScreenPosition.x < (-obstacle.contentSize.width) {
         obstacle.removeFromParent()
-        obstacles.removeAtIndex(find(obstacles, obstacle)!)
+        obstacles.removeAtIndex(obstacles.indexOf(obstacle)!)
         
         // for each removed obstacle, add a new one
         spawnNewObstacle()
@@ -127,7 +127,7 @@ class MainScene : CCNode, CCPhysicsCollisionDelegate {
   }
   
   func restart() {
-    var scene = CCBReader.loadAsScene("MainScene")
+    let scene = CCBReader.loadAsScene("MainScene")
     CCDirector.sharedDirector().replaceScene(scene)
   }
   
@@ -142,9 +142,9 @@ class MainScene : CCNode, CCPhysicsCollisionDelegate {
       // just in case
       hero.stopAllActions()
       
-      var move = CCActionEaseBounceOut(action: CCActionMoveBy(duration: 0.2, position: ccp(0, 4)))
-      var moveBack = CCActionEaseBounceOut(action: move.reverse())
-      var shakeSequence = CCActionSequence(array: [move, moveBack])
+      let move = CCActionEaseBounceOut(action: CCActionMoveBy(duration: 0.2, position: ccp(0, 4)))
+      let moveBack = CCActionEaseBounceOut(action: move.reverse())
+      let shakeSequence = CCActionSequence(array: [move, moveBack])
       runAction(shakeSequence)
     }
   }
